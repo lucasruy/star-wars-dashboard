@@ -23,16 +23,59 @@ var _setActive = require('./interactions/setActive');
 
 var _setActive2 = _interopRequireDefault(_setActive);
 
+var _saveChoice = require('./interactions/saveChoice');
+
+var _saveChoice2 = _interopRequireDefault(_saveChoice);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // =========================================
 // Init Events  ----------------------------
-(0, _setActive2.default)(); // =========================================
+// =========================================
 // Import Functions  -----------------------
 
 // Active dark mode ------------------------
+(0, _setActive2.default)();
 
-},{"./interactions/setActive":3}],3:[function(require,module,exports){
+// Save theme selected ---------------------
+
+(0, _saveChoice2.default)();
+
+},{"./interactions/saveChoice":3,"./interactions/setActive":4}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var saveChoice = function saveChoice() {
+  var themeButton = document.querySelector('.navigation__mode');
+
+  var makeStorage = function makeStorage() {
+    var bodyElement = document.body;
+
+    if (bodyElement.classList.contains('dark-theme')) {
+      localStorage.setItem('themeStatus', 'dark');
+    } else {
+      localStorage.setItem('themeStatus', 'light');
+    }
+  };
+  var checkStorage = function checkStorage() {
+    var themeStatus = localStorage.getItem('themeStatus');
+
+    if (themeStatus === 'dark') {
+      document.body.classList.add('dark-theme');
+    } else if (themeStatus === 'light') {
+      document.body.classList.remove('dark-theme');
+    }
+  };
+
+  themeButton.addEventListener('click', makeStorage, false);
+  document.addEventListener('DOMContentLoaded', checkStorage, false);
+};
+
+exports.default = saveChoice;
+
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
