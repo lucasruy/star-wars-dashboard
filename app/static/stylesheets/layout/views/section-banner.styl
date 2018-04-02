@@ -1,0 +1,35 @@
+.banner {
+  grid(35%)
+
+  +el('title') {
+    color: c-blue;
+  }
+  +el('text') {
+    color: c-text;
+    margin-bottom: 25px;
+  }
+  +el('result') {
+    margin-top: 50px;
+    +el('title') {
+      color: c-blue;
+    }
+    +el('item') {
+      margin: 10px 0px;
+      border: 1px solid c-blue;
+      border-radius: 5px;
+      padding: 30px 20px;
+      .result-item {
+        +el('name') {
+          color: c-blue;
+          padding-bottom: 10px;
+        }
+        +el('infos') {
+          display: flex;
+          +el('item') {
+            flex: auto;
+          }
+        }
+      }
+    }
+  }
+}

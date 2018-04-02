@@ -1,0 +1,58 @@
+// =========================================
+// Global ----------------------------------
+*,
+*:after,
+*:before{
+	-mox-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: raleway;
+	font-size: font-1x;
+	font-smoothing: antialiased;
+	text-size-adjust: none;
+
+  background-color: c-white;
+  color: c-text;
+
+  transition: t-default;
+
+  &.dark-theme {
+    background-color: c-black;
+    color: c-blue;
+    .navigation {
+      background-color: c-black;
+      box-shadow: 2px 0px 20px 5px rgba(0, 0, 0, 0.20);
+      .menu-item {
+        background-color: c-black;
+
+        &:hover {
+          background-color: c-blue;
+          color: c-black;
+        }
+      }
+    }
+  }
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: raleway;
+	font-weight: 700;
+}
+ol, ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-weight: 500;
+	b, strong{
+		font-weight: 700;
+  }
+}
+img{
+	width: 100%;
+}

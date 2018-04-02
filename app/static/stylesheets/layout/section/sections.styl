@@ -1,0 +1,34 @@
+// =========================================
+// Sections --------------------------------
+.container {
+  max-width 1280px
+  width 100%
+  margin-left auto
+  margin-right auto
+}
+
+.section {
+  position relative
+
+  display block
+  width 100%
+  height 100%
+
+  box-sizing border-box
+
+  &:before, &:after {
+    content ''
+    display block
+    clear both
+  }
+  +mod('banner'){
+    grid(95%)
+    height: 100vh;
+    padding: 80px 60px;
+
+    background-image: url('../images/background/main.png');
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 925px;
+  }
+}

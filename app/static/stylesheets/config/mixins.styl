@@ -1,0 +1,68 @@
+// =========================================
+// Mixins ----------------------------------
+
+  // ------------------------------
+  // Mobile first medias
+  // Use the example: call +media() with the desired breakpoint
+  // Breakpoints options: 'mobile', 'tablet', 'notebook', 'desktop'
+  media(value)
+    if value == 'mobile'
+      @media only screen and (min-width: bp-mobile)
+        {block}
+    else if value == 'tablet'
+      @media only screen and (min-width: bp-tablet)
+        {block}
+    else if value == 'desktop'
+      @media only screen and (min-width: bp-desktop)
+        {block}
+
+  // ------------------------------
+  // Clearfix mixin
+  // Use example within your class, call clearfix() to fix float
+  clearfix()
+    clear both
+    &:before
+      content ''
+      display block
+    &:after
+      content ''
+      display table
+      clear both
+
+  // ------------------------------
+  // BEM CSS mixins
+  // Use example: within your class, call +el('NameOfYourElement'), +mod('NameOfYourModifier')
+  el(element)
+    &__{element}
+      {block}
+
+  mod(modifier)
+    &--{modifier}
+      {block}
+
+  // ------------------------------
+  // Grid system
+  // Use example: within your class, call grid() with the desired width
+  // OBS: Inside the 'variables.styl' file, there are values of the column widths
+  grid(value){
+    display: inline-block;
+    width: value;
+    float: left;
+  }
+
+  // ------------------------------
+  // Custom scroll bar
+  // Use example: within your class, call customScrollBar() with your custom params
+  customScrollBar(containerSize, borderRadius, trackColor, thumbColor)
+    &::-webkit-scrollbar {
+      width: containerSize;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: borderRadius;
+      background-color: trackColor;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: borderRadius;
+      background-color: thumbColor;
+      outline: 1px solid thumbColor;
+    }
