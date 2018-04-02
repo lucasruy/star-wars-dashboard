@@ -1,11 +1,13 @@
 // =========================================
 // Import Functions  -----------------------
 
-  // Example -------------------------------
-  import darkmode from './components/darkmode';
+// Active dark mode ----------------------
+import darkmode from './components/darkmode';
 
 // =========================================
 // Init Events  ----------------------------
-window.addEventListener('load', function(){
+const loadInteractions = () => {
   darkmode();
-});
+};
+
+document.addEventListener('DOMContentLoaded', loadInteractions, false);

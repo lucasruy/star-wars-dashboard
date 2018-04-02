@@ -9,12 +9,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // =========================================
 // Init Events  ----------------------------
-window.addEventListener('load', function () {
+var loadInteractions = function loadInteractions() {
   (0, _darkmode2.default)();
-}); // =========================================
+}; // =========================================
 // Import Functions  -----------------------
 
-// Example -------------------------------
+// Active dark mode ----------------------
+
+
+document.addEventListener('DOMContentLoaded', loadInteractions, false);
 
 },{"./components/darkmode":2}],2:[function(require,module,exports){
 'use strict';

@@ -246,7 +246,6 @@ img {
   margin: 20px 0px 0px;
 }
 .navigation__list__item .menu-item {
-  padding: 10px 15px;
   cursor: pointer;
   font-weight: 700;
   border-radius: 5px;
@@ -255,13 +254,27 @@ img {
   color: #80c6ff;
   transition: all 200ms ease;
 }
+.navigation__list__item .menu-item svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: transparent;
+  fill: #80c6ff;
+}
 .navigation__list__item .menu-item:hover {
   background-color: #80c6ff;
   color: #fff;
 }
+.navigation__list__item .menu-item:hover svg {
+  fill: #fff;
+}
 .navigation__list__item .menu-item.is-active {
   background-color: #80c6ff;
   color: #fff;
+}
+.navigation__list__item .menu-item.is-active svg {
+  fill: #fff;
 }
 .navigation__mode {
   position: absolute;

@@ -34,7 +34,6 @@
       margin: 20px 0px 0px;
 
       .menu-item {
-        padding: 10px 15px;
         cursor: pointer;
 
         font-weight: 700;
@@ -46,13 +45,30 @@
         color: c-blue;
         transition: t-default;
 
+        svg {
+          display: block;
+          width: 40px;
+          height: 40px;
+
+          padding: 10px;
+
+          background-color: transparent;
+          fill: c-blue;
+        }
+
         &:hover {
           background-color: c-blue;
           color: c-white;
+          svg {
+            fill: c-white;
+          }
         }
         &.is-active {
           background-color: c-blue;
           color: c-white;
+          svg {
+            fill: c-white;
+          }
         }
       }
     }
