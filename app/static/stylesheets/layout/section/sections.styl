@@ -22,13 +22,19 @@
     clear both
   }
   +mod('banner'){
-    grid(95%)
     height: 100vh;
-    padding: 80px 60px;
-
     background-image: url('../images/background/main.png');
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 50%;
+
+    @media only screen and (min-width: 320px) {
+      grid(100%)
+      padding: 20px 15px;
+    }
+    @media only screen and (min-width: 1024px) {
+      width: 95%;
+      padding: 80px 60px;
+    }
   }
 }

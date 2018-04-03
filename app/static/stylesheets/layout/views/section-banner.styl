@@ -1,5 +1,5 @@
 .banner {
-  grid(35%)
+
 
   +el('title') {
     color: c-blue;
@@ -70,5 +70,12 @@
         }
       }
     }
+  }
+
+  @media only screen and (min-width: 320px) {
+    grid(100%)
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 40%;
   }
 }
