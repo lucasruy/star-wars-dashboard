@@ -14,46 +14,24 @@
     <main>
       <nav class="navigation"><i class="navigation__logo" title="Home"></i>
         <ul class="navigation__list">
-          <li class="navigation__list__item">
-            <div class="menu-item" title="Search pearson">
+          <li class="navigation__list__item"><i class="navigation__mode" title="Dark Side Mode">
               <svg>
-                <use xlink:href="assets/images/svg/icons.svg#search"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="navigation__list__item">
-            <div class="menu-item" title="Favorites list">
-              <svg>
-                <use xlink:href="assets/images/svg/icons.svg#heart"></use>
-              </svg>
-            </div>
-          </li>
-        </ul><i class="navigation__mode" title="Dark Side Mode">
-          <svg>
-            <use xlink:href="assets/images/svg/icons.svg#darthvader"></use>
-          </svg></i><i class="navigation__expand" title="Expand">
-          <svg>
-            <use xlink:href="assets/images/svg/icons.svg#arrow"></use>
-          </svg></i>
+                <use xlink:href="assets/images/svg/icons.svg#darthvader"></use>
+              </svg></i></li>
+        </ul>
       </nav>
       <section class="x-section section--banner" id="banner">
         <div class="banner">
           <h2 class="banner__title">Star Wars Dashboard</h2>
           <p class="banner__text">Search your favorite pearson</p>
-          <input class="field" type="text" placeholder="Insert ID off your pearson">
+          <input class="field" type="text" placeholder="Insert the id of your character and press enter">
           <ul class="banner__result">
             <h3 class="banner__result__title">Suggestion</h3>
             <li class="banner__result__item">
-              <div class="result-item">
-                <h4 class="result-item__name">Pearson Name</h4>
-                <div class="result-item__infos">
-                  <p class="result-item__infos__item">Height:<span>172</span></p>
-                  <p class="result-item__infos__item">Mass:<span>77</span></p>
-                  <p class="result-item__infos__item">Hair color:<span>Blond</span></p>
-                  <p class="result-item__infos__item">Birth Year:<span>19BBY</span></p>
-                  <p class="result-item__infos__item">Gender:<span>male</span></p>
-                </div>
-              </div>
+              <svg>
+                <use xlink:href="assets/images/svg/icons.svg#refresh"></use>
+              </svg>
+              <div class="result-item"></div>
             </li>
           </ul>
         </div>
