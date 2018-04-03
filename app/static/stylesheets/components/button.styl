@@ -1,0 +1,30 @@
+.button {
+  padding: 10px;
+
+  border-radius: 5px;
+  border: 1px solid c-blue;
+
+  background-color: transparent;
+  color: c-white;
+  cursor: pointer;
+
+  transition: t-default;
+
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+  +mod('search') {
+    padding: 0px;
+    background-color: c-blue;
+    svg {
+      display: block;
+      width: 30px;
+      height: 30px;
+      padding: 4px;
+      fill: c-white;
+    }
+  }
+}

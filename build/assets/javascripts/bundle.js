@@ -211,13 +211,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var searchPearson = function searchPearson() {
   var searchField = document.querySelector('.field');
+  var searchButton = document.querySelector('.button--search');
   var pearsonCard = document.querySelector('.banner__result__item');
   var title = document.querySelector('.banner__result__title');
+
+  var setSearch = function setSearch() {
+    title.textContent = 'Search result: ';
+    pearsonCard.classList.add('is-searching');
+    (0, _enableSearch2.default)(searchField.value, pearsonCard);
+  };
+
   searchField.addEventListener('keydown', function (e) {
-    if (e.keyCode === 13) {
-      title.textContent = 'Search result: ';
-      pearsonCard.classList.add('is-searching');
-      (0, _enableSearch2.default)(searchField.value, pearsonCard);
+    if (e.keyCode === 13 && searchField.value !== '') {
+      setSearch();
+    }
+  }, false);
+  searchButton.addEventListener('click', function () {
+    if (searchField.value !== '') {
+      setSearch();
     }
   }, false);
 

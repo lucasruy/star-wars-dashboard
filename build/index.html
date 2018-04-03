@@ -24,7 +24,14 @@
         <div class="banner">
           <h2 class="banner__title">Star Wars Dashboard</h2>
           <p class="banner__text">Search your favorite pearson</p>
-          <input class="field" type="text" placeholder="Insert the id of your character and press enter">
+          <div class="banner__field">
+            <input class="field" type="number" placeholder="Enter an id of your character">
+            <button class="button button--search" type="button">
+              <svg>
+                <use xlink:href="assets/images/svg/icons.svg#search"></use>
+              </svg>
+            </button>
+          </div>
           <ul class="banner__result">
             <h3 class="banner__result__title">Suggestion</h3>
             <li class="banner__result__item">

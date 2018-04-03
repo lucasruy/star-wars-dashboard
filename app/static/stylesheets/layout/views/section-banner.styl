@@ -1,12 +1,20 @@
 .banner {
 
-
   +el('title') {
     color: c-blue;
   }
   +el('text') {
     color: c-text;
     margin-bottom: 25px;
+  }
+  +el('field') {
+    position: relative;
+    .button--search {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+    }
   }
   +el('result') {
     margin-top: 50px;
