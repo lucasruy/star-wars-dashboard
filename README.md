@@ -23,25 +23,25 @@ npm install
 ### Gulp.js tasks
 
 List of tasks included in `tasks`.
-   - `images.js` responsible for copying and optimizing images to the` dist / assets / images` folder.
-   - `javascripts.js` concatenates all files included in` app / src / ** / *. js`, compiles and generates a mined bundle.
-   - `pug.js` concatenates all files included in` app / static / templates / ** / *. pug`, compiles and generates final HTML.
-   - `server.js` starts local server with Browser Sync.
-   - `stylus.js` compiles` .styl` files to `.css`.
-   - `watch.js` notes code changes.
+- `images.js` responsible for copying and optimizing images to the` dist / assets / images` folder.
+- `javascripts.js` concatenates all files included in` app / src / ** / *. js`, compiles and generates a mined bundle.
+- `pug.js` concatenates all files included in` app / static / templates / ** / *. pug`, compiles and generates final HTML.
+- `server.js` starts local server with Browser Sync.
+- `stylus.js` compiles` .styl` files to `.css`.
+- `watch.js` notes code changes.
 
 ## Starting with Gulp.js
 
 In this project `gulp.js` is used to automate routine tasks.
 
 Commands to start your `gulpfile.babel.js`.
-   - `gulp` to execute the` default` task.
-   - `gulp images` to optimize images
-   - `gulp javascripts` to compile` .js` files
-   - `gulp pug` to compile` .pug` files
-   - `gulp browserSync` to start the local server
-   - `gulp stylus` to compile` .styl` files
-   - `gulp watch` to start observer of code changes
+- `gulp` to execute the` default` task.
+- `gulp images` to optimize images
+- `gulp javascripts` to compile` .js` files
+- `gulp pug` to compile` .pug` files
+- `gulp browserSync` to start the local server
+- `gulp stylus` to compile` .styl` files
+- `gulp watch` to start observer of code changes
 
 Or you can simply type
 
