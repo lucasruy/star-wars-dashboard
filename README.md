@@ -1,5 +1,7 @@
 # Star Wars Dashboard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LucasRuy/star-wars-dashboard.svg)](https://greenkeeper.io/)
+
 ## Getting Started
 
 ### Requirements
