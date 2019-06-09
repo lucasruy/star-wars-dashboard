@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import CONSTANTS from 'utils/CONSTANTS'
 
+import DarthVader from './../svg/DarthVader.jsx'
+
 const Menu = styled.ul`
     display: flex;
     flex-flow: column;
@@ -36,7 +38,7 @@ const MenuList = () => (
     <Menu>
         <MenuItem>
             <SVGItem>
-                <svg><use xlinkHref="assets/images/svg/icons.svg#darthvader" /></svg>
+                <DarthVader />
             </SVGItem>
         </MenuItem>
     </Menu>
