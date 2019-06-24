@@ -28,7 +28,7 @@
     "chai": "^4.1.2",
     "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.18.0",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^6.0.0",
     "gulp-notify": "^3.2.0",
