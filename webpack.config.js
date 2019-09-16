@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   entry: {
-    main: './src/scripts/app.jsx'
+    main: './src/scripts/app.js'
   },
   resolve: {
     alias: {
