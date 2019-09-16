@@ -9,8 +9,9 @@ module.exports = {
   resolve: {
     alias: {
       components: join(__dirname, 'src/scripts/components'),
+      images: join(__dirname, 'src/assets/images'),
       routes: join(__dirname, 'src/scripts/routes'),
-      utils: join(__dirname, 'src/scripts/utils'),
+      utils: join(__dirname, 'src/scripts/utils')
     }
   },
   module: {
