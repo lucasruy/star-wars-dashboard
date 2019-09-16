@@ -1,5 +1,5 @@
 {
-  "name": "LucasRuyBoilerplate",
+  "name": "star-wars-dashboard",
   "version": "1.0.0",
   "eslintConfig": {
     "env": {
