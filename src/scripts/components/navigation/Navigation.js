@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 import CONSTANTS from 'utils/CONSTANTS'
 
-import Logo from './components/Logo.jsx'
-import MenuList from './components/MenuList.jsx'
+import Logo from './components/Logo.js'
+import MenuList from './components/MenuList.js'
 
 const Navbar = styled.nav`
     position: relative;
