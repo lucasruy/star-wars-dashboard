@@ -15,6 +15,22 @@ const Navbar = styled.nav`
     &.is-expanded {
         width: 10%;
     }
+
+    @media only screen and (min-width: 320px) {
+        width: 100%;
+        height: 75px;
+        padding: 16px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 5%;
+        height: 100vh;
+        padding: 5px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        padding: 20px;
+    }
 `
 
 const Navigation = () => (

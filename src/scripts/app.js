@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Home from './routes/home/Home.jsx'
+import Home from './routes/home/Home'
 
 const AppNode = document.getElementById('react-app')
 

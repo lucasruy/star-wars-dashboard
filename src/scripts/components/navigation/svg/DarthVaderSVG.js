@@ -1,7 +1,7 @@
 import React from 'react'
 
-const DarthVader = () => (
-    <svg height="195px" version="1.1" viewBox="0 0 216 195" width="216px" xmlns="http://www.w3.org/2000/svg" xmlnsSketch="http://www.bohemiancoding.com/sketch/ns" xmlnsXlink="http://www.w3.org/1999/xlink">
+const DarthVaderSVG = () => (
+    <svg height="195px" version="1.1" viewBox="0 0 216 195" width="216px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
             <g id="star-wars-copy" transform="translate(-252.000000, -1251.000000)">
                 <g id="darth-vader" transform="translate(252.000000, 1251.000000)">
@@ -12,4 +12,4 @@ const DarthVader = () => (
     </svg>
 )
 
-export default DarthVader
+export default DarthVaderSVG
