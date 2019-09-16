@@ -18,26 +18,31 @@ const Menu = styled.ul`
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    list-style: none;
+    padding: 0px;
 `
 
 const MenuItem = styled.li`
-    margin: 20px 0px 0px;
+    margin-top: 20px;
+    width: 100%;
 `
 
 const SVGItem = styled.i`
-    position: absolute;
-    transform: translateX(-50%);
-
+    /* position: absolute; */
+    /* transform: translateX(-50%); */
+    display: block;
+    width: calc(100% - 4px);
+    height: auto;
     border: 4px solid ${GRAY_DARK};
     border-radius: 5px;
     cursor: pointer;
 
     svg {
       display: block;
-      padding: 4px;
-
-      background-color: ${GRAY_DARK};
+      width: 100%;
+      height: auto;
       fill: ${WHITE};
+      background-color: ${GRAY_DARK};
     }
 `
 
