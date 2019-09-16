@@ -4,7 +4,7 @@ export default {
         TABLET: '768px',
         DESKTOP: '1280px'
     },
-    COLOR: {
+    COLORS: {
         BLACK: '#272727',
         GRAY_DARK: '#4D4D4D',
         BLUE_LIGTH: '#80C6FF',

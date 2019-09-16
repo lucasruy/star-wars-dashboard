@@ -5,6 +5,13 @@ import CONSTANTS from 'utils/CONSTANTS'
 
 import DarthVaderSVG from '../svg/DarthVaderSVG'
 
+const {
+    COLORS: {
+        GRAY_DARK,
+        WHITE
+    }
+} = CONSTANTS
+
 const Menu = styled.ul`
     display: flex;
     flex-flow: column;
@@ -21,7 +28,7 @@ const SVGItem = styled.i`
     position: absolute;
     transform: translateX(-50%);
 
-    border: 4px solid ${CONSTANTS.COLOR.GRAY_DARK};
+    border: 4px solid ${GRAY_DARK};
     border-radius: 5px;
     cursor: pointer;
 
@@ -29,8 +36,8 @@ const SVGItem = styled.i`
       display: block;
       padding: 4px;
 
-      background-color: ${CONSTANTS.COLOR.GRAY_DARK};
-      fill: ${CONSTANTS.COLOR.WHITE};
+      background-color: ${GRAY_DARK};
+      fill: ${WHITE};
     }
 `
 

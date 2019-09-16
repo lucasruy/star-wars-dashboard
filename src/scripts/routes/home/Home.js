@@ -5,7 +5,6 @@ import Navigation from 'components/navigation/Navigation'
 const Home = () => (
     <div>
         <Navigation />
-        Home Page...
     </div>
 )
 

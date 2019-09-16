@@ -6,9 +6,13 @@ import CONSTANTS from 'utils/CONSTANTS'
 import Logo from './components/Logo.js'
 import MenuList from './components/MenuList.js'
 
+const {
+    COLORS: { WHITE }
+} = CONSTANTS
+
 const Navbar = styled.nav`
     position: relative;
-    background-color: ${CONSTANTS.COLOR.WHITE};
+    background-color: ${WHITE};
     box-shadow: 2px 0px 20px 5px rgba(0, 0, 0, 0.05);
     padding: 20px;
 
