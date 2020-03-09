@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styled from 'styled-components'
 
+import * as SVG from 'svg'
 import { Input } from 'components/Input'
-import { Button } from 'components/Button'
+import { ButtonSearch } from 'components/Button'
 
 const Fieldset = styled.div`
   position: relative;
@@ -20,10 +21,12 @@ const Search = () => {
     <Fieldset>
       <Input />
       <ButtonWrapper>
-        <Button>Search</Button>
+        <ButtonSearch>
+          <SVG.Search />
+        </ButtonSearch>
       </ButtonWrapper>
     </Fieldset>
   )
 }
 
-export default Search
+export default memo(Search)

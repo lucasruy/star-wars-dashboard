@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styled from 'styled-components'
 import{ BREAKPOINTS } from 'utils/CONSTANTS'
 
@@ -30,4 +30,4 @@ const Home = () => (
   </Wrapper>
 )
 
-export default Home
+export default memo(Home)

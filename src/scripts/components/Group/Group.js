@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -16,4 +16,4 @@ Group.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default Group
+export default memo(Group)

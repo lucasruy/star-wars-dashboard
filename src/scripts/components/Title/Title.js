@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, memo } from 'react'
 import styled from 'styled-components'
 import { COLORS } from 'utils/CONSTANTS'
 
@@ -18,4 +18,4 @@ const Title = () => (
   </Fragment>
 )
 
-export default Title
+export default memo(Title)

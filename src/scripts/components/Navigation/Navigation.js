@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styled from 'styled-components'
 
 import{ COLORS, BREAKPOINTS } from 'utils/CONSTANTS'
@@ -44,4 +44,4 @@ const Navigation = () => (
   </Navbar>
 )
 
-export default Navigation
+export default memo(Navigation)
