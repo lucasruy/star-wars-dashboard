@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import LogoSVG from '../svg/LogoSVG'
+import * as SVG from '../svg'
 
 const LogoStyled = styled.i`
   display: block;
@@ -27,7 +27,7 @@ const LogoStyled = styled.i`
 
 const Logo = () => (
   <LogoStyled>
-    <LogoSVG />
+    <SVG.Logo />
   </LogoStyled>
 )
 

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import CONSTANTS from 'utils/CONSTANTS'
 
-import DarthVaderSVG from '../svg/DarthVaderSVG'
+import * as SVG from '../svg'
 
 const {
     COLORS: {
@@ -36,8 +36,6 @@ const MenuItem = styled.li`
 `
 
 const SVGItem = styled.i`
-    /* position: absolute; */
-    /* transform: translateX(-50%); */
     display: block;
     width: calc(100% - 4px);
     height: auto;
@@ -55,13 +53,13 @@ const SVGItem = styled.i`
 `
 
 const MenuList = () => (
-    <Menu>
-        <MenuItem>
-            <SVGItem>
-                <DarthVaderSVG />
-            </SVGItem>
-        </MenuItem>
-    </Menu>
+  <Menu>
+    <MenuItem>
+        <SVGItem>
+          <SVG.DarthVader />
+        </SVGItem>
+    </MenuItem>
+  </Menu>
 )
 
 export default MenuList
