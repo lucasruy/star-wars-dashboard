@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import * as SVG from '../svg'
+import * as SVG from 'svg'
 
 const LogoStyled = styled.i`
   display: block;

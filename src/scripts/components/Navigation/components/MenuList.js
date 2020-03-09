@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import * as SVG from 'svg'
 import { COLORS } from 'utils/CONSTANTS'
-import * as SVG from '../svg'
 
 const Menu = styled.ul`
     display: flex;
