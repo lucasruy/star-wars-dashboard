@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import{ BREAKPOINTS } from 'utils/CONSTANTS'
 
 import { Group } from 'components/Group'
-import { Navigation } from 'components/Navigation'
 import { Title } from 'components/Title'
+import { Search } from 'components/Search'
+import { Navigation } from 'components/Navigation'
 
 const Wrapper = styled.div`
   display: flex;
@@ -24,6 +25,7 @@ const Home = () => (
     <Navigation />
     <Group>
       <Title />
+      <Search />
     </Group>
   </Wrapper>
 )
