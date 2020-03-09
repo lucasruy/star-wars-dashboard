@@ -1,11 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Home from './routes/home/Home'
+import { Home } from './pages/Home'
 
 const AppNode = document.getElementById('react-app')
 
-ReactDOM.render(
-  <Home />, 
-  AppNode
-)
+ReactDOM.render(<Home />, AppNode)

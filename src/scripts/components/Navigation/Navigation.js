@@ -27,7 +27,7 @@ const Navbar = styled.nav`
     }
 
     @media only screen and (min-width: 1024px) {
-        width: 5%;
+        width: 3%;
         height: 100vh;
         padding: 5px;
     }
