@@ -17,14 +17,22 @@ const Menu = styled.ul`
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
     list-style: none;
     padding: 0px;
+
+    @media only screen and (min-width: 1024px) {
+      margin-top: 50px;
+    }
 `
 
 const MenuItem = styled.li`
+  margin-top: 0;
+  width: 25%;
+
+  @media only screen and (min-width: 1024px) {
     margin-top: 20px;
     width: 100%;
+  }
 `
 
 const SVGItem = styled.i`

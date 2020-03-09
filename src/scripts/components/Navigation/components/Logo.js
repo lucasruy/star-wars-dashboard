@@ -5,7 +5,7 @@ import LogoSVG from '../svg/LogoSVG'
 
 const LogoStyled = styled.i`
   display: block;
-  width: 100%;
+  width: 20%;
   height: 40px;
 
   background-image: url('../../../images/logo.png');
@@ -18,6 +18,10 @@ const LogoStyled = styled.i`
   svg {
     width: 100%;
     height: auto;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    width: 100%;
   }
 `
 
