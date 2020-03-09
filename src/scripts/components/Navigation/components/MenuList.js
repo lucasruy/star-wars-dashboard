@@ -47,9 +47,9 @@ const SVGItem = styled.i`
 const MenuList = () => (
   <Menu>
     <MenuItem>
-        <SVGItem>
-          <SVG.DarthVader />
-        </SVGItem>
+      <SVGItem>
+        <SVG.DarthVader />
+      </SVGItem>
     </MenuItem>
   </Menu>
 )

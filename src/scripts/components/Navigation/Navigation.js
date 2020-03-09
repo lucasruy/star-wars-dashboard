@@ -38,10 +38,10 @@ const Navbar = styled.nav`
 `
 
 const Navigation = () => (
-    <Navbar>
-        <Logo />
-        <MenuList />
-    </Navbar>
+  <Navbar>
+    <Logo />
+    <MenuList />
+  </Navbar>
 )
 
 export default Navigation
