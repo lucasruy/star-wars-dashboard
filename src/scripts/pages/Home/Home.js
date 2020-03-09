@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import{ BREAKPOINTS } from 'utils/CONSTANTS'
 
+import { Group } from 'components/Group'
 import { Navigation } from 'components/Navigation'
 import { Title } from 'components/Title'
 
@@ -21,7 +22,9 @@ const Wrapper = styled.div`
 const Home = () => (
   <Wrapper>
     <Navigation />
-    <Title />
+    <Group>
+      <Title />
+    </Group>
   </Wrapper>
 )
 
