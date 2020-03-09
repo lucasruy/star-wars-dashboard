@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import { Navigation } from 'components/Navigation'
+import { Title } from 'components/Title'
 
 const Home = () => (
-    <div>
+    <Fragment>
         <Navigation />
-    </div>
+        <Title />
+    </Fragment>
 )
 
 export default Home
