@@ -1,6 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { COLORS } from 'utils/CONSTANTS'
+
+const Wrapper = styled.div`
+  margin-left: 50px;
+`
 
 const MainTitle = styled.h2`
   color: ${COLORS.BLUE_LIGTH};
@@ -12,10 +16,10 @@ const SubTitle = styled.h2`
 `
 
 const Title = () => (
-  <Fragment>
+  <Wrapper>
     <MainTitle>Star Wars Dashboard</MainTitle>
     <SubTitle>Search your favorite pearson</SubTitle>
-  </Fragment>
+  </Wrapper>
 )
 
 export default Title
