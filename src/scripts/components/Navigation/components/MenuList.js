@@ -1,16 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import CONSTANTS from 'utils/CONSTANTS'
-
+import { COLORS } from 'utils/CONSTANTS'
 import * as SVG from '../svg'
-
-const {
-    COLORS: {
-        GRAY_DARK,
-        WHITE
-    }
-} = CONSTANTS
 
 const Menu = styled.ul`
     display: flex;
@@ -39,7 +31,7 @@ const SVGItem = styled.i`
     display: block;
     width: calc(100% - 4px);
     height: auto;
-    border: 4px solid ${GRAY_DARK};
+    border: 4px solid ${COLORS.GRAY_DARK};
     border-radius: 5px;
     cursor: pointer;
 
@@ -47,8 +39,8 @@ const SVGItem = styled.i`
       display: block;
       width: 100%;
       height: auto;
-      fill: ${WHITE};
-      background-color: ${GRAY_DARK};
+      fill: ${COLORS.WHITE};
+      background-color: ${COLORS.GRAY_DARK};
     }
 `
 
